@@ -29,8 +29,11 @@ def post_to_deepl_api(text, target_lang="JA", auth_key_path="auth_key.json"):
         どの言語に翻訳するか。デフォルトはJA(日本語)。
         選べる言語は以下のドキュメントの target_lang を参照してください。
         https://www.deepl.com/docs-api/translating-text/request/
+        
+    auth_key_path : str
+        認証キーが書かれたJSONのパス。
     """
-    # アクセスキーの読み込み
+    # 認証キーの読み込み
     with open(auth_key_path) as f:
         auth_dict = json.load(f)
         auth_key = auth_dict["auth_key"]
