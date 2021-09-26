@@ -12,4 +12,4 @@ https://www.deepl.com/pro-api?cta=header-pro/ で登録してDeepL API Freeの�
   "auth_key": "取得した認証キー"
 }
 ```
-という内容の`auth_key.json`を作成してください。
+という内容の`auth_key.json`というファイルを作成してください。
